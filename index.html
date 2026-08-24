@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sugam Samadhan People Awareness Center - Nadbai, Bharatpur, Rajasthan. eMitra, CSC, Computer Education, 200 Gaon Project.">
+<meta name="keywords" content="Sugam Samadhan, eMitra, CSC Center, RSCIT, People Awareness, Nadbai, Bharatpur">
+<title>Sugam Samadhan | People Awareness Center</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="logo-circle">🤝</div>
+  <p>Sugam Samadhan</p>
+  <span>Loading...</span>
+</div>
+
+<!-- SCROLL TO TOP -->
+<button id="scrollTop" aria-label="Scroll to top">↑</button>
+
+<!-- COOKIE BANNER -->
+<div id="cookieBanner">
+  <p>🍪 Yeh website aapke experience ke liye cookies use karti hai.</p>
+  <div style="display:flex;gap:8px;">
+    <button class="cookie-accept" onclick="acceptCookie()">Theek Hai</button>
+    <button class="cookie-decline" onclick="dismissCookie()">Band Karein</button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <div class="nav-logo-circle">🤝</div>
+        <div>
+          <div class="nav-brand-name">Sugam Samadhan</div>
+          <div class="nav-brand-sub">People Awareness Center</div>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#gaon" class="nav-link">200 Gaon</a>
+        <a href="#programs" class="nav-link">Programs</a>
+        <a href="#ngo" class="nav-link">NGO</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="tel:8000217280" class="btn btn-outline-green" style="padding:8px 16px;font-size:13px;">📞 Call Us</a>
+        <a href="#contact" class="btn btn-primary" style="padding:8px 16px;font-size:13px;">Join Us</a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="closeMenu()">🏠 Home</a>
+  <a href="#services" onclick="closeMenu()">🖥️ Services</a>
+  <a href="#gaon" onclick="closeMenu()">🌾 200 Gaon Project</a>
+  <a href="#programs" onclick="closeMenu()">📋 Programs</a>
+  <a href="#ngo" onclick="closeMenu()">🤝 NGO / Society</a>
+  <a href="#contact" onclick="closeMenu()">📞 Contact</a>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge badge-gold">🌱 Rajasthan's Largest Rural Awareness Network</span>
+        </div>
+        <h1 class="hero-title">
+          जागरूकता से <span>बदलाव</span>,<br>बदलाव से नया समाज
+        </h1>
+        <p class="hero-subtitle">People Awareness Center — Nadbai, Bharatpur, Rajasthan</p>
+        <p class="hero-tagline">जनसेवा अस्माकं परमो धर्मः</p>
+        <div class="hero-btns">
+          <a href="#gaon" class="btn btn-gold">🌾 200 Gaon Project</a>
+          <a href="#services" class="btn btn-outline">हमारी सेवाएं</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="val" data-target="200">0</div>
+            <div class="lbl">Villages Covered</div>
+          </div>
+          <div class="hero-stat">
+            <div class="val" data-target="200">0</div>
+            <div class="lbl">Sugam Sakhis</div>
+          </div>
+          <div class="hero-stat">
+            <div class="val" data-target="50000">0</div>
+            <div class="lbl">Beneficiaries</div>
+          </div>
+          <div class="hero-stat">
+            <div class="val" data-target="12">0</div>
+            <div class="lbl">Schemes Covered</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="float-badge fb-1">✅ eMitra Live</div>
+        <div class="hero-center-card">
+          <div class="hero-center-icon">🤝</div>
+          <h3>Sugam Samadhan</h3>
+          <p>Har Ghar Tak Adhikar</p>
+          <div style="margin-top:16px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
+            <span class="badge badge-gold">eMitra</span>
+            <span class="badge" style="background:rgba(13,115,119,0.15);color:#0D7377;">CSC</span>
+            <span class="badge badge-green">RSCIT</span>
+          </div>
+        </div>
+        <div class="hero-float-cards">
+          <div class="hero-float-card">
+            <div class="fc-icon">🌾</div>
+            <div class="fc-text"><p>200 Gaon</p><span>Project Active</span></div>
+          </div>
+          <div class="hero-float-card">
+            <div class="fc-icon">👩</div>
+            <div class="fc-text"><p>Sugam Sakhi</p><span>200 Workers</span></div>
+          </div>
+          <div class="hero-float-card">
+            <div class="fc-icon">🖥️</div>
+            <div class="fc-text"><p>Jan Jagrati</p><span>Computer Center</span></div>
+          </div>
+          <div class="hero-float-card">
+            <div class="fc-icon">📋</div>
+            <div class="fc-text"><p>NGO Society</p><span>Registered</span></div>
+          </div>
+        </div>
+        <div class="float-badge fb-2">🎓 RSCIT Certified</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner" id="tickerInner">
+    <div class="ticker-item">eMitra Services</div>
+    <div class="ticker-item">CSC Centre</div>
+    <div class="ticker-item">RSCIT Computer Course</div>
+    <div class="ticker-item">Tally Course</div>
+    <div class="ticker-item">Hindi & English Typing</div>
+    <div class="ticker-item">200 Gaon Project</div>
+    <div class="ticker-item">Sugam Sakhi Program</div>
+    <div class="ticker-item">PM Kisan Yojana</div>
+    <div class="ticker-item">Ayushman Bharat</div>
+    <div class="ticker-item">Jan Jagrati Kendra</div>
+    <div class="ticker-item">NGO Registration</div>
+    <div class="ticker-item">Mahila Sashaktikaran</div>
+    <!-- Duplicate for seamless loop -->
+    <div class="ticker-item">eMitra Services</div>
+    <div class="ticker-item">CSC Centre</div>
+    <div class="ticker-item">RSCIT Computer Course</div>
+    <div class="ticker-item">Tally Course</div>
+    <div class="ticker-item">Hindi & English Typing</div>
+    <div class="ticker-item">200 Gaon Project</div>
+    <div class="ticker-item">Sugam Sakhi Program</div>
+    <div class="ticker-item">PM Kisan Yojana</div>
+    <div class="ticker-item">Ayushman Bharat</div>
+    <div class="ticker-item">Jan Jagrati Kendra</div>
+    <div class="ticker-item">NGO Registration</div>
+    <div class="ticker-item">Mahila Sashaktikaran</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     ABOUT / FEATURES
+══════════════════════════════════════════════ -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="section-label">Who We Are</div>
+    <div class="section-title">एक छत के नीचे — संपूर्ण जन सेवा</div>
+    <div class="section-sub">Sugam Samadhan sarkari yojanaon ki jaankari se lekar digital seva tak sab kuch ek jagah deta hai — bilkul muft aur paaradharshi tarike se.</div>
+    <div class="features-grid fade-up">
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#E1F5EE;">🏛️</div>
+        <h3>eMitra / CSC Center</h3>
+        <p>Sarkari documents, certificates, online forms aur sarkari shulk bhugtan mein poori sahayata. Jan Aadhar se lekar pension tak sab kuch.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#E3F2FD;">🖥️</div>
+        <h3>Jan Jagrati Kendra</h3>
+        <p>RSCIT, Tally, Basic Computer, English & Hindi Typing — sabhi courses ek hi kendra par. Sarkari manyata prapt praman patr milega.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#FFF3E0;">👩</div>
+        <h3>Mahila Sashaktikaran</h3>
+        <p>200 Sugam Sakhis ke zariye har ghar tak sarkari adhikar pahunchana. Mahilaon ko swarojgar aur digital shiksha dena.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#FCE4EC;">📢</div>
+        <h3>Jan Jagrati Abhiyan</h3>
+        <p>PM Kisan, Ayushman Bharat, PM Awas, Ujjwala jesi yojanaon ki jankari. Ghar-ghar camp aur jagrukta abhiyan.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#F3E5F5;">🤝</div>
+        <h3>NGO / People Society</h3>
+        <p>Sugam Samadhan People Awareness Society — Society Registration Act 1860 ke antargat panjikrit ek samajsevi sanstha.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#E0F7FA;">🌐</div>
+        <h3>Cyber Cafe</h3>
+        <p>High-speed internet, printing, scanning, photocopy aur passport size photo — sab kuch ek hi jagah par.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SERVICES
+══════════════════════════════════════════════ -->
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="section-label">Services</div>
+    <div class="section-title">हमारी सेवाएं</div>
+    <div class="section-sub">Apni zaroorat ka tab chunein aur services dekhein. Sabhi services bilkul transparent aur sarkari daron par.</div>
+    <div class="tabs-bar">
+      <button class="tab-btn active" onclick="showTab('emitra', this)">📋 eMitra</button>
+      <button class="tab-btn" onclick="showTab('csc', this)">🏛️ CSC</button>
+      <button class="tab-btn" onclick="showTab('education', this)">🎓 Education</button>
+      <button class="tab-btn" onclick="showTab('digital', this)">🌐 Digital</button>
+    </div>
+
+    <div class="tab-panel active" id="tab-emitra">
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>जन्म / मृत्यु प्रमाण पत्र</p><span>Birth & Death Certificate</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>जाति / मूल निवास प्रमाण पत्र</p><span>Caste & Domicile Certificate</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>आय प्रमाण पत्र</p><span>Income Certificate</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>राशन कार्ड संशोधन व आवेदन</p><span>Ration Card Application</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>बिजली / पानी बिल भुगतान</p><span>Utility Bill Payment</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Jan Aadhar / भामाशाह अपडेट</p><span>Jan Aadhar Update</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>पेंशन आवेदन व स्टेटस</p><span>Pension Application</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>छात्रवृत्ति आवेदन</p><span>Scholarship Application</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>रोजगार / विवाह पंजीकरण</p><span>Employment Registration</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>भूमि संबंधित दस्तावेज़</p><span>Land Documents</span></div></div>
+    </div>
+
+    <div class="tab-panel" id="tab-csc">
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>आयुष्मान भारत कार्ड</p><span>Health Insurance Card</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>PM Kisan Registration</p><span>Farmer Scheme</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>PAN Card आवेदन</p><span>PAN Card Application</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Voter ID / Passport</p><span>Identity Documents</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>बैंकिंग सेवाएं (BC)</p><span>Banking Correspondent</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>बीमा सेवाएं</p><span>Insurance Services</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>GST / ITR Filing सहायता</p><span>Tax Filing Help</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Driving License / RC</p><span>Vehicle Documents</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>PM Awas Yojana आवेदन</p><span>Housing Scheme</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Digital Locker / eSign</p><span>Digital Services</span></div></div>
+    </div>
+
+    <div class="tab-panel" id="tab-education">
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>RSCIT Course (3 माह)</p><span>Govt. Certified Computer Course</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Tally (2 माह)</p><span>Accounting & GST Software</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Basic Computer (1.5 माह)</p><span>MS Office, Internet, Email</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>English Typing</p><span>Speed Test Practice (WPM)</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Hindi Typing (Kruti Dev)</p><span>Hindi Typing Course</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Batch 1: 9–11 AM</p><span>Subah Batch</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Batch 2: 2–4 PM</p><span>Dopahar Batch</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Batch 3: 5–7 PM</p><span>Shaam Batch</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Certificate प्रदान किया जाएगा</p><span>Official Certificate</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Placement Assistance</p><span>Job Support</span></div></div>
+    </div>
+
+    <div class="tab-panel" id="tab-digital">
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Printing / Scanning</p><span>Document Services</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Photocopy</p><span>B&W and Color</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Passport Size Photos</p><span>Instant Photos</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Internet / Cyber Cafe</p><span>High Speed Broadband</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Mobile Recharge / DTH</p><span>All Operators</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Video Calling Support</p><span>For Senior Citizens</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Form Filling Assistance</p><span>All Government Forms</span></div></div>
+      <div class="service-card"><div class="s-dot"></div><div class="s-content"><p>Digital Literacy</p><span>Smartphone Training</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     200 GAON PROJECT
+══════════════════════════════════════════════ -->
+<section class="gaon-section" id="gaon">
+  <div class="container">
+    <div class="section-label">Flagship Project</div>
+    <div class="section-title">200 गांव प्रोजेक्ट</div>
+    <div class="section-sub">Har gaon mein ek Sugam Sakhi — har ghar tak sarkari adhikar. Ek revolutionary rural awareness model.</div>
+
+    <div class="gaon-hero fade-up">
+      <div>
+        <span class="badge badge-gold" style="margin-bottom:16px;display:inline-flex;">🌟 Flagship Initiative</span>
+        <h2><span>200</span> गांव,<br><span>200</span> सखी</h2>
+        <p>Har gaon mein ek trained Sugam Sakhi ghar-ghar jakar sarkari yojanaon ki jankari deti hai, aavedan karati hai aur status track karti hai. Ek fully digital connected model jo gramin mahilaon ko swarojgar bhi deta hai.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="#contact" class="btn btn-gold">Sugam Sakhi Banein →</a>
+          <a href="#programs" class="btn btn-outline">Aur Janein</a>
+        </div>
+      </div>
+      <div class="gaon-stats-grid">
+        <div class="gaon-stat-card">
+          <div class="gsn">200</div>
+          <div class="gsl">🌾 Villages</div>
+        </div>
+        <div class="gaon-stat-card">
+          <div class="gsn">200</div>
+          <div class="gsl">👩 Sakhis</div>
+        </div>
+        <div class="gaon-stat-card">
+          <div class="gsn">50K+</div>
+          <div class="gsl">👨‍👩‍👧‍👦 Beneficiaries</div>
+        </div>
+        <div class="gaon-stat-card">
+          <div class="gsn">7</div>
+          <div class="gsl">📚 Days Training</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Workflow -->
+    <div style="margin:40px 0 0;">
+      <p class="workflow-title">Sugam Sakhi — Work Flow</p>
+      <div class="workflow-steps fade-up">
+        <div class="wf-step">
+          <div class="wf-circle">01</div>
+          <div>
+            <h4>Jaankari</h4>
+            <p>Yojana ki<br>jankari dena</p>
+          </div>
+        </div>
+        <div class="wf-step">
+          <div class="wf-circle">02</div>
+          <div>
+            <h4>Aavedan</h4>
+            <p>Form<br>bharna</p>
+          </div>
+        </div>
+        <div class="wf-step">
+          <div class="wf-circle">03</div>
+          <div>
+            <h4>Documents</h4>
+            <p>Dastawez<br>janch</p>
+          </div>
+        </div>
+        <div class="wf-step">
+          <div class="wf-circle">04</div>
+          <div>
+            <h4>Online Submit</h4>
+            <p>Digital<br>submission</p>
+          </div>
+        </div>
+        <div class="wf-step">
+          <div class="wf-circle">05</div>
+          <div>
+            <h4>Status Track</h4>
+            <p>Follow-up<br>karna</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Income Model -->
+    <div class="income-wrap fade-up">
+      <p class="workflow-title" style="margin-top:40px;">Sugam Sakhi — Income Model</p>
+      <div class="income-grid">
+        <div class="income-card">
+          <div class="ic-icon">💰</div>
+          <div class="ic-val">₹50 – ₹200</div>
+          <div class="ic-label">प्रति आवेदन</div>
+          <div class="ic-sub">Per Application Income</div>
+        </div>
+        <div class="income-card">
+          <div class="ic-icon">📋</div>
+          <div class="ic-val">300–500</div>
+          <div class="ic-label">आवेदन / माह</div>
+          <div class="ic-sub">Applications per Month</div>
+        </div>
+        <div class="income-card">
+          <div class="ic-icon">💵</div>
+          <div class="ic-val">₹10K–₹25K</div>
+          <div class="ic-label">प्रति सखी / माह</div>
+          <div class="ic-sub">Monthly Earnings per Sakhi</div>
+        </div>
+      </div>
+      <div class="income-total">
+        <p>200 सखी × ₹10,000 = नेटवर्क Total Potential</p>
+        <strong>₹20 Lakh / Month</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     IMPACT STATS
+══════════════════════════════════════════════ -->
+<section class="impact-section">
+  <div class="container">
+    <div class="impact-grid fade-up">
+      <div class="impact-card">
+        <div class="i-icon">👨‍👩‍👧‍👦</div>
+        <div class="i-val" data-target="50000">0</div>
+        <div class="i-label">Beneficiaries</div>
+        <div class="i-sub">लोगों को लाभ</div>
+      </div>
+      <div class="impact-card">
+        <div class="i-icon">👩</div>
+        <div class="i-val" data-target="200">0</div>
+        <div class="i-label">Women Employed</div>
+        <div class="i-sub">महिलाओं को रोजगार</div>
+      </div>
+      <div class="impact-card">
+        <div class="i-icon">🌾</div>
+        <div class="i-val" data-target="200">0</div>
+        <div class="i-label">Digital Villages</div>
+        <div class="i-sub">डिजिटल गांव</div>
+      </div>
+      <div class="impact-card">
+        <div class="i-icon">📋</div>
+        <div class="i-val" data-target="12">0</div>
+        <div class="i-label">Govt. Schemes</div>
+        <div class="i-sub">सरकारी योजनाएं</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     PROGRAMS
+══════════════════════════════════════════════ -->
+<section class="programs-section" id="programs">
+  <div class="container">
+    <div class="section-label">Our Programs</div>
+    <div class="section-title">हमारे कार्यक्रम</div>
+    <div class="section-sub">Jan Jagrati Kendra ke char mukhya karyakram jo samaj ke har varg ke liye kaam karte hain.</div>
+    <div class="programs-grid fade-up">
+      <div class="prog-card">
+        <div class="prog-header">
+          <div class="prog-header-icon" style="background:#E1F5EE;">📋</div>
+          <div class="prog-header-text">
+            <h3>Sarkari Yojana Jagrukta</h3>
+            <span>Government Scheme Awareness</span>
+          </div>
+        </div>
+        <div class="prog-body">
+          <ul>
+            <li>PM Kisan Samman Nidhi</li>
+            <li>PM Awas Yojana</li>
+            <li>Ayushman Bharat Card</li>
+            <li>Ujjwala & Saubhagya Yojana</li>
+            <li>Beti Bachao Abhiyan</li>
+            <li>Ghar-ghar camp ka aayojan</li>
+          </ul>
+        </div>
+      </div>
+      <div class="prog-card">
+        <div class="prog-header">
+          <div class="prog-header-icon" style="background:#E3F2FD;">💻</div>
+          <div class="prog-header-text">
+            <h3>Digital Shiksha</h3>
+            <span>Digital Literacy Program</span>
+          </div>
+        </div>
+        <div class="prog-body">
+          <ul>
+            <li>Smartphone & Internet Training</li>
+            <li>Online Banking Awareness</li>
+            <li>Cyber Safety & Security</li>
+            <li>Mahilaon ke liye special batches</li>
+            <li>Youth Skill Development</li>
+            <li>RSCIT & Computer Courses</li>
+          </ul>
+        </div>
+      </div>
+      <div class="prog-card">
+        <div class="prog-header">
+          <div class="prog-header-icon" style="background:#FCE4EC;">👩</div>
+          <div class="prog-header-text">
+            <h3>Mahila Sashaktikaran</h3>
+            <span>Women Empowerment</span>
+          </div>
+        </div>
+        <div class="prog-body">
+          <ul>
+            <li>Mahila adhikar jagrukta</li>
+            <li>SHG aur swarojgar sahayata</li>
+            <li>Vittiya saksharta workshop</li>
+            <li>Gharelu hinsa se sanrakshan</li>
+            <li>Sugam Sakhi network</li>
+            <li>200 Mahilaon ko direct rozgar</li>
+          </ul>
+        </div>
+      </div>
+      <div class="prog-card">
+        <div class="prog-header">
+          <div class="prog-header-icon" style="background:#E8F5E9;">🤝</div>
+          <div class="prog-header-text">
+            <h3>Samajik Seva</h3>
+            <span>Social Service Program</span>
+          </div>
+        </div>
+        <div class="prog-body">
+          <ul>
+            <li>Garib parivaron ki madad</li>
+            <li>Buzurg & Divyang sahayata</li>
+            <li>Bal shiksha jagrukta</li>
+            <li>Swasthya jagrukta camp</li>
+            <li>Paryavaran sanrakshan</li>
+            <li>Volunteer program</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     NGO SECTION
+══════════════════════════════════════════════ -->
+<section class="ngo-section" id="ngo">
+  <div class="container">
+    <div class="section-label">Society</div>
+    <div class="section-title">People Awareness Society</div>
+    <div class="section-sub">Society Registration Act 1860 ke antargat panjikrit — ek samajsevi sanstha jo samaj ke har varg ke liye kaam karti hai.</div>
+    <div class="ngo-grid fade-up">
+      <div class="ngo-card">
+        <div class="ngo-icon">🔗</div>
+        <div>
+          <h4>Sarkar & Janta ka Pul</h4>
+          <p>Sarkari yojanaon ko seedha janta tak pahunchana. Bichaulion se mukti aur transparent seva.</p>
+        </div>
+      </div>
+      <div class="ngo-card">
+        <div class="ngo-icon">🌾</div>
+        <div>
+          <h4>Gramin Vikas Model</h4>
+          <p>Rural areas mein sustainable development aur awareness. 200 gaon mein digital kranti.</p>
+        </div>
+      </div>
+      <div class="ngo-card">
+        <div class="ngo-icon">💼</div>
+        <div>
+          <h4>CSR Project Ready</h4>
+          <p>Corporate Social Responsibility funding ke liye ideal structure. Government proposals bhi taiyaar.</p>
+        </div>
+      </div>
+      <div class="ngo-card">
+        <div class="ngo-icon">🎓</div>
+        <div>
+          <h4>Volunteer Program</h4>
+          <p>Join karein aur official certificate paayein. Resume mein NGO experience add karein. Best Volunteer Award pratyekvarsh.</p>
+        </div>
+      </div>
+    </div>
+    <div class="ngo-director fade-up">
+      <div class="ngo-director-info">
+        <div class="ngo-avatar">DS</div>
+        <div>
+          <h4>Devendra Singh</h4>
+          <p>Director — Sugam Samadhan People Awareness Center & Society</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a href="tel:9785156162" class="btn btn-outline-green" style="padding:10px 20px;">📞 9785156162</a>
+        <a href="#contact" class="btn btn-primary">Join NGO →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════════ -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="section-label">Contact</div>
+    <div class="section-title">संपर्क करें</div>
+    <div class="section-sub">Kisi bhi seva ke liye ya volunteer banne ke liye humse sampark karein. Hum aapki madad ke liye taiyaar hain.</div>
+    <div class="contact-grid fade-up">
+      <!-- Form -->
+      <div class="contact-form-card">
+        <h3>📩 Humse Sampark Karein</h3>
+        <form id="contactForm" onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Aapka Naam *</label>
+              <input type="text" id="fname" placeholder="Poora naam" required>
+            </div>
+            <div class="form-group">
+              <label>Mobile Number *</label>
+              <input type="tel" id="fphone" placeholder="10 digit number" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="femail" placeholder="aapka@email.com">
+          </div>
+          <div class="form-group">
+            <label>Aap kya chahte hain? *</label>
+            <select id="fservice" required>
+              <option value="">-- Chunein --</option>
+              <option>eMitra / CSC Service</option>
+              <option>RSCIT Course</option>
+              <option>Tally Course</option>
+              <option>Basic Computer Course</option>
+              <option>Typing Course</option>
+              <option>Sugam Sakhi Banana Chahta/Chahti Hoon</option>
+              <option>NGO Volunteer Banana Chahta/Chahti Hoon</option>
+              <option>Koi aur sawal</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Aapka Sandesh</label>
+            <textarea id="fmessage" placeholder="Apni zaroorat ya sawaal yahan likhein..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:14px;">
+            📩 Sandesh Bhejein
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ Aapka sandesh mil gaya! Hum jaldi hi sampark karenge.
+          </div>
+        </form>
+      </div>
+
+      <!-- Info -->
+      <div class="contact-info">
+        <div class="contact-info-card">
+          <div class="contact-info-icon">📞</div>
+          <div>
+            <h4>Phone / WhatsApp</h4>
+            <a href="tel:8000217280">8000217280</a>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-icon">📞</div>
+          <div>
+            <h4>Director (Devendra Singh)</h4>
+            <a href="tel:9785156162">9785156162</a>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-icon">📍</div>
+          <div>
+            <h4>Address / Pata</h4>
+            <p>Near Rudha Mandir, Khatauti,<br>Nadbai, Bharatpur, Rajasthan — 321602</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-icon">🕘</div>
+          <div>
+            <h4>Center Timing</h4>
+            <p>Somvar – Shanivaar<br>9:00 AM – 7:00 PM</p>
+          </div>
+        </div>
+        <div class="map-placeholder">
+          <div style="font-size:32px;">🗺️</div>
+          <p>Near Rudha Mandir, Khatauti, Nadbai, Bharatpur, Rajasthan</p>
+          <a href="https://maps.google.com/?q=Nadbai+Bharatpur+Rajasthan" target="_blank"
+             class="btn btn-outline-green" style="margin-top:12px;padding:8px 16px;font-size:13px;">
+            Google Maps par Dekhein →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-row">
+          <div class="footer-logo-circle">🤝</div>
+          <div>
+            <div class="footer-brand-name">Sugam Samadhan</div>
+            <div class="footer-brand-sub">People Awareness Center</div>
+          </div>
+        </div>
+        <p>Ek samajsevi sanstha jo gramin aur shahri janta ko sarkari yojanaon ka labh dilane, digital saksharta badhane aur mahilaon ko sashakt karne ke liye kaam karti hai.</p>
+        <p style="font-style:italic;color:rgba(255,255,255,0.35);font-size:13px;">"जनसेवा अस्माकं परमो धर्मः"</p>
+        <div class="footer-socials" style="margin-top:14px;">
+          <a href="#" class="social-btn" title="WhatsApp">📱</a>
+          <a href="#" class="social-btn" title="Facebook">📘</a>
+          <a href="#" class="social-btn" title="YouTube">▶️</a>
+          <a href="#" class="social-btn" title="Instagram">📸</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gaon">200 Gaon Project</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#ngo">NGO Society</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">eMitra Center</a></li>
+          <li><a href="#services">CSC Services</a></li>
+          <li><a href="#services">RSCIT Course</a></li>
+          <li><a href="#services">Tally Course</a></li>
+          <li><a href="#services">Typing Course</a></li>
+          <li><a href="#services">Cyber Cafe</a></li>
+          <li><a href="#services">Printing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:8000217280">📞 8000217280</a></li>
+          <li><a href="tel:9785156162">📞 9785156162</a></li>
+          <li><a href="#">📍 Nadbai, Bharatpur</a></li>
+          <li><a href="#">🕘 9AM – 7PM</a></li>
+        </ul>
+        <div style="margin-top:16px;">
+          <a href="#contact" class="btn btn-gold" style="padding:10px 18px;font-size:13px;">Join Us →</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Sugam Samadhan People Awareness Center. All rights reserved.</p>
+      <p class="footer-tagline">"जागरूकता से बदलाव, बदलाव से नया समाज"</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════════════ -->
+<script>
+/* ── LOADER ── */
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const loader = document.getElementById('loader');
+    loader.style.opacity = '0';
+    loader.style.transition = 'opacity 0.5s ease';
+    setTimeout(() => { loader.style.display = 'none'; }, 500);
+  }, 1200);
+
+  /* Show cookie banner */
+  if (!localStorage.getItem('cookieAccepted')) {
+    setTimeout(() => {
+      document.getElementById('cookieBanner').classList.add('show');
+    }, 2000);
+  }
+});
+
+/* ── NAVBAR SCROLL ── */
+window.addEventListener('scroll', () => {
+  const navbar = document.getElementById('navbar');
+  const scrollTop = document.getElementById('scrollTop');
+  if (window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+    scrollTop.classList.add('show');
+  } else {
+    navbar.classList.remove('scrolled');
+    scrollTop.classList.remove('show');
+  }
+
+  /* Active nav link on scroll */
+  const sections = ['home','about','services','gaon','programs','ngo','contact'];
+  let current = 'home';
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && window.scrollY >= el.offsetTop - 100) current = id;
+  });
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+  });
+});
+
+/* ── SCROLL TO TOP ── */
+document.getElementById('scrollTop').addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+/* ── MOBILE MENU ── */
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+
+/* ── SERVICE TABS ── */
+function showTab(name, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  btn.classList.add('active');
+}
+
+/* ── COUNTER ANIMATION ── */
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target);
+  const duration = 2000;
+  const step = target / (duration / 16);
+  let current = 0;
+  const timer = setInterval(() => {
+    current += step;
+    if (current >= target) {
+      current = target;
+      clearInterval(timer);
+    }
+    el.textContent = target >= 1000
+      ? Math.floor(current).toLocaleString('en-IN') + '+'
+      : Math.floor(current);
+  }, 16);
+}
+
+/* ── INTERSECTION OBSERVER ── */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      /* Trigger counters */
+      entry.target.querySelectorAll('[data-target]').forEach(el => {
+        if (!el.dataset.counted) {
+          el.dataset.counted = true;
+          animateCounter(el);
+        }
+      });
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.fade-up, .hero-stats, .impact-grid').forEach(el => observer.observe(el));
+
+/* Also observe stat elements directly for hero */
+document.querySelectorAll('.hero-stat .val[data-target]').forEach(el => {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting && !el.dataset.counted) {
+        el.dataset.counted = true;
+        animateCounter(el);
+      }
+    });
+  }, { threshold: 0.5 });
+  io.observe(el);
+});
+
+/* ── CONTACT FORM ── */
+function submitForm(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('button[type=submit]');
+  btn.textContent = '⏳ Bhej rahe hain...';
+  btn.disabled = true;
+  setTimeout(() => {
+    document.getElementById('formSuccess').classList.add('show');
+    btn.textContent = '✅ Bhej Diya!';
+    document.getElementById('contactForm').reset();
+    setTimeout(() => {
+      btn.textContent = '📩 Sandesh Bhejein';
+      btn.disabled = false;
+      document.getElementById('formSuccess').classList.remove('show');
+    }, 4000);
+  }, 1500);
+}
+
+/* ── COOKIE ── */
+function acceptCookie() {
+  localStorage.setItem('cookieAccepted', '1');
+  document.getElementById('cookieBanner').classList.remove('show');
+}
+function dismissCookie() {
+  document.getElementById('cookieBanner').classList.remove('show');
+}
+
+/* ── SMOOTH SCROLL for anchor links ── */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      const top = target.offsetTop - 68;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
+<script src="script.js"></script>
